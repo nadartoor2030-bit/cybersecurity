@@ -6,12 +6,12 @@
     <title>Cyber Hub | Smart Link Checker</title>
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
     
     <!-- Unified CSS -->
     <link rel="stylesheet" href="link-checker.css">
@@ -60,7 +60,9 @@
             <p class="subtitle">Paste any website URL below and Cyber Hub will analyze common phishing indicators.</p>
             
             <input type="text" id="urlInput" placeholder="https://example.com">
-            <button id="scanBtn">
+            
+            <!-- FIXED: Added explicit onclick handler to link directly to your JS function -->
+            <button id="scanBtn" onclick="startUrlScan()">
                 <i class="fa-solid fa-magnifying-glass"></i> Scan Link
             </button>
             
@@ -92,7 +94,7 @@
         </div>
     </section>
 
-    <!-- Consolidated Application Scripts -->
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script src="link-checker.js"></script>
 </body>
